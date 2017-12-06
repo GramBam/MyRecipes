@@ -66,12 +66,7 @@ footer {
   margin-top: 25px;
   border-top: 1px solid #eaeaea;
   color: #777;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 1rem;
-  background-color: #eeeeef;
   text-align: center;
 }
 
@@ -96,4 +91,15 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.show_recipe {
+  margin: 10px 10px 10px 10px;
 }
