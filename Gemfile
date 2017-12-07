@@ -24,6 +24,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate'
+gem 'fog', '~> 1.38'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
