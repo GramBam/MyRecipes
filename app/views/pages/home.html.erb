@@ -1,23 +1,32 @@
-<div class="center jumbotron">
-  <h1>Welcome to MyRecipes App</h1>
-  <h2>This is the home page</h2>
 
-  <%= link_to "Sign up now!", register_path, class:"btn btn-large btn-success"%>
-</div>
-<div class="row">
-  <div class="col-lg-4">
-    <h3 class="midrow">View Recipes as Guest User</h3>
-    <h2 class="left">Browse and view recipes as a guest and Sign Up later</h2>
-    <p><%= link_to "Browse Recipe Listings", recipes_path, class: "btn btn-warning btn-small" %></p>
-  </div>
-  <div class="col-lg-4">
-    <h3 class="midrow">Sign in to your account</h3>
-    <h2 class="left">Add/Update your recipes, create reviews, like & dislike recipes and more!</h2>
-    <p><%= link_to "Login to your account", login_path, class: "btn btn-warning btn-small" %></p>
-  </div>
-  <div class="col-lg-4">
-    <h3 class="midrow">View Recipes as Guest User</h3>
-    <h2 class="left">Browse and view recipes as a guest and Sign Up later</h2>
-    <p><%= link_to "Browse Recipe Listings", "", class: "btn btn-warning btn-small" %></p>
+<div class="container">
+  <h1 style ="font-style: italic; font-family: impact;">Welcome to MyRecipes App!</h1>
+  <h2><%= link_to "Sign up now!", register_path, class:"btn btn-large btn-success"%></h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= link_to image_tag("food.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image", :style => "width: 100%"} %>
+      </div>
+
+      <div class="item">
+        <%= link_to image_tag("food2.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image", :style => "width: 100%"} %>
+      </div>
+
+      <div class="item">
+        <%= link_to image_tag("food3.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image", :style => "width: 100%"} %>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
