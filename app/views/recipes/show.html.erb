@@ -5,7 +5,7 @@
     <% if @recipe.chef.picture? %>
     <%= link_to image_tag(@recipe.chef.picture, class: 'gravatar showpic', size: 250), chef_path(@recipe.chef) %>
     <% else %>
-    <%= link_to gravatar_for(@recipe.chef, size: 200), chef_path(@recipe.chef) %>
+    <%= link_to image_tag('default.png', size: 250), chef_path(@recipe.chef) %>
     <% end %>
 
     <p>

@@ -113,3 +113,11 @@ span.picture {
 .showpic {
   margin-top: 50px;
 }
+
+.checkbox-inlinez+.checkbox-inlinez {
+    margin-left: 0;
+}
+
+.checkbox-inlinez {
+    margin-right: 10px;
+}
