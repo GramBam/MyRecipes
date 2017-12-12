@@ -19,11 +19,7 @@
     <% end %>
 
 
-    <h3><%= @recipe.summary %></h3>
-    <div class="show_recipe">
-      <%= image_tag(@recipe.picture.url, class: "gravatar", size: 250) if @recipe.picture? %>
-    </div>
-
+    <h3><%= @recipe.summary %></h3><hr />
 
     <div class="well">
       <% if @recipe.styles.any? %>
