@@ -1,6 +1,9 @@
 <header class="navbar navbar-fixed-top navbar-default">
   <div class="container">
     <%= link_to "Recipes on Rails", root_path, class: "btn btn-lg btn-success", id: "logo" %>>
+    <div class="nav_ul_item">
+      <%= link_to "All Recipes", recipes_path, class: "btn btn-default btn-warning" %>
+    </div>
     <ul class="nav_ul_item">
       <li class="dropdown">
         <%= link_to '#', class: 'btn btn-default btn-info dropdown-toggle', "data-toggle" => "dropdown" do %>
@@ -21,7 +24,7 @@
         </ul>
       </li>
     </ul>
-    <ul class="nav_ul_item">
+    <!-- <ul class="nav_ul_item">
       <li class="dropdown">
         <%= link_to '#', class: 'btn btn-default btn-info dropdown-toggle', "data-toggle" => "dropdown" do %>
           Browse by Ingredients <b class="caret"></b>
@@ -40,10 +43,8 @@
           <% end %>
         </ul>
       </li>
-    </ul>
-    <div class="nav_ul_item">
-      <%= link_to "All Recipes", recipes_path, class: "btn btn-default btn-warning" %>
-    </div>
+    </ul> -->
+
     <% if logged_in? %>
     <div class="nav_ul_item">
       <%= link_to "New Recipe", new_recipe_path, class: "btn btn-default btn-warning" %>

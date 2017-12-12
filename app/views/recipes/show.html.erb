@@ -29,10 +29,10 @@
       <% if @recipe.styles.any? %>
       <p>Style: <%= render @recipe.styles %>
         <% end %>
-        <% if @recipe.ingredients.any? %>
+        <!-- <% if @recipe.ingredients.any? %>
       <p>Ingredients: <%= render @recipe.ingredients %></p>
-      <% end %>
-      <p><strong>Steps:</strong></p>
+      <% end %> -->
+      <p><strong>Ingredients & Instructions:</strong></p>
       <%= simple_format(@recipe.description) %>
       <div class="pull-right">
         <%= link_to like_recipe_path(@recipe, like: true), method: :post do %>
