@@ -133,7 +133,15 @@ span.picture {
 
 @media screen and (max-width: 992px) {
   .showpic {
-    margin-top: 250px;
+    display: none
   }
-
+  .indexpic {
+    display: block;
+    margin: 0 auto;
+  }
+  .userbutton {
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+  }
   }
